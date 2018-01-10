@@ -20,10 +20,10 @@ public class ReadingTest01 {
 	      System.out.println("PDF loaded"); 
 	        
 	      //Adding a blank page to the document 
-	      document.addPage(new PDPage());  
+	      document.addPage(new PDPage());
 
 	      //Saving the document 
-	      document.save("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ReadingTest01/BillSummary--Oct14-Nov13UT.pdf");
+	      document.save("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ReadingTest01/BillSummary--Oct14-Nov13T.pdf");
 
 	      //Closing the document  
 	      document.close(); 
