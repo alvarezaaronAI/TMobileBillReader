@@ -14,7 +14,7 @@ public class ExtractingTest02 {
 		 /** 
 		   * Testing Extracting Text from Tmobile Bill
 		   **/
-		File file = new File("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryUntouched/BillSummary--Oct14-Nov13U.pdf");
+		File file = new File("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryUntouched/BillSummary--Nov14-Dec13U.pdf");
 		PDDocument document = PDDocument.load(file);
 
 		System.out.println("PDF loaded");
@@ -38,7 +38,7 @@ public class ExtractingTest02 {
 		      System.out.println("Extracted the text from the document. Converted into A Text File ");
 		//-----------------------------------
 		// Saving the document
-		document.save("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ExtractingTest02/BillSummary--Oct14-Nov13T.pdf");
+		document.save("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ExtractingTest02/BillSummary--Nov14-Dec13UT.pdf");
 
 		// Closing the document
 		document.close();
@@ -50,7 +50,7 @@ public class ExtractingTest02 {
 	 * Public method that allows me to print out text that was extracted from the pdf file onto a txt file */
 	public static void fileOutPut(String TextInput) throws IOException{
 		try {
-			File fileIn = new File("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ExtractingTest02/BillSummary--Oct14-Nov13T.txt");
+			File fileIn = new File("D:/CSWorkSpaceFiles/TMobileFiles/BillSummaryTouched/ExtractingTest02/BillSummary--Nov14-Dec13T.txt");
 			FileWriter data = new FileWriter(fileIn);
 			
 			data.write(TextInput);
