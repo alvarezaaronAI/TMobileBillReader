@@ -74,7 +74,7 @@ public class Entry {
 		System.out.println("The word entered is:" + emptyWordTest.getWord());
 		System.out.println("Is it empty? :" + emptyWordTest.isItEmpty());
 		System.out.println(emptyWordTest.toString());
-
+		System.out.println(emptyWordTest.hashCode());
 	}
 
 }
